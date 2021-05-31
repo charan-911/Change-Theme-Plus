@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Theme</title>
+
+        <link id="style" rel="stylesheet" type="text/css" href="light.css">
+    </head>
+
+    <body>
+        <div id="box">
+            <button class="bl" onclick="swapStyle('light.css')">Light Mode</button>
+            <button class="bd" onclick="swapStyle('dark.css')">Dark Mode</button>
+        </div>
+
+        <p>Click on any of the following!</p>
+        <br>
+        <a target="_blank" href="C:\Users\Chaku\Desktop\WEB DESIGNING\PROJ\CALCULATOR\index.html"><button>CALCULATOR</button></a>
+            <br><br>
+        <a target="_blank" href="C:\Users\Chaku\Desktop\WEB DESIGNING\PROJ\STOPWATCH\index.html"><button>STOPWATCH</button></a>
+            <br><br>
+        <a target="_blank" href="C:\Users\Chaku\Desktop\WEB DESIGNING\PROJ\TIC TAC TOE\index.html"><button>TIC TAC TOE</button></a>
+        <br><br>
+
+
+        <script type="text/javascript">
+
+            var setTheme=localStorage.getItem('theme');
+
+            if(setTheme == null)
+            {
+                swapStyle('light.css');
+            }
+            else
+            {
+                swapStyle(setTheme);
+            }
+
+            function swapStyle(sheet)
+            {
+                document.getElementById("style").href=sheet;
+                localStorage.setItem('theme',sheet); 
+            }
+
+            var name=prompt("Hi! Whats your Name?");
+            alert("Hi "+name+"!")
+            document.write("Today is: "+Date());
+
+        </script>
+    </body>
+</html>

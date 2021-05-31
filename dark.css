@@ -1,0 +1,28 @@
+body
+{
+    background-color: #222;
+    color:white;
+    font-weight:bolder;
+}
+button:hover
+{
+    cursor:pointer;
+}
+p
+{
+    font-size:200%;
+}
+#box
+{
+    border:solid white 2px;
+    display:grid;
+}
+.bd
+{
+    display:none;
+}
+button
+{
+    font-size:200%;
+    font-weight:bolder;
+}

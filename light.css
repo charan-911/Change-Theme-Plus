@@ -1,0 +1,28 @@
+body
+{
+    font-weight:bolder;
+}
+button:hover
+{
+    cursor:pointer;
+}
+p
+{
+    font-size:200%;
+}
+#box
+{
+    border: solid black 2px;
+    display:grid;
+}
+.bl
+{
+    display:none;
+}
+button
+{
+    font-size:200%;
+    background-color: #444;
+    color:white;
+    font-weight:bolder;
+}
